@@ -96,7 +96,7 @@ DATABASES = {
     'default': dj_database_url.parse(os.environ.get("DATABASE_URL" ))
 }
 
-SECRET_KEY = os.environ.get("secret_key")
+secret_key = os.environ.get("secret_key")
 
 
 
