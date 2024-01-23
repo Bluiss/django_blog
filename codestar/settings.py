@@ -93,8 +93,11 @@ WSGI_APPLICATION = 'codestar.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse(os.environ.get("DATABASE_URL"))
+    'default': dj_database_url.parse(os.environ.get("DATABASE_URL" ))
 }
+
+SECRET_KEY = os.environ.get("secret_key")
+
 
 
 # Password validation
